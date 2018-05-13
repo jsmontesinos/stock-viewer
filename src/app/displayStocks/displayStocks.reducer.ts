@@ -19,7 +19,7 @@ export interface DisplayStocksData {
 export function displayStocksReducer(state: any, action: DisplayStocksAction) {
   switch (action.type) {
     case DisplayStocksActionTypes.LOAD_STOCK_DATA_SUCCESS:
-      return JSON.stringify(action.payload);
+      return action.payload;
     default:
       return state;
   }

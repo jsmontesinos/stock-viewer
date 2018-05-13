@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ConfigService } from 'src/app/config/config.service';
 
-
 @Injectable()
 export class DisplayStocksService {
     private baseUrl: string;

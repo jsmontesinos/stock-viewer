@@ -1,6 +1,6 @@
 <div id="menu">
   <mat-form-field>
-    <mat-select placeholder="Stock name">
+    <mat-select placeholder="Stock name" (selectionChange)="onStockChange($event.value)">
       <mat-option *ngFor="let stock of stocks" [value]="stock.value">
         {{ stock.name }}
       </mat-option>
@@ -8,4 +8,6 @@
   </mat-form-field>
   <button mat-raised-button color="primary">Refresh</button>
 </div>
-<div id="graphic"></div>
+<div id="graphic">
+  {{ data | async }} 
+</div>

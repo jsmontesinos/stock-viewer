@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-layout>
+      <h1>Stocks Viewer</h1>
       <router-outlet></router-outlet>
     </app-layout>
   `

@@ -11,6 +11,10 @@
     "test:ci": "jest --runInBand",
     "test:watch": "jest --watch"
   },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.1",

@@ -7,3 +7,6 @@ A very simple program to represent graphical stock information in a simple web a
 - Angular JS
 - Jest
 - Graph library based in D3
+- ngrx/platform
+
+

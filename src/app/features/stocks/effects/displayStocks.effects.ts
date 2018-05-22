@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Actions, Effect, ofType } from '@ngrx/effects';
-import { DisplayStocksService } from './displayStocks.service';
-import { DisplayStocksAction, DisplayStocksActionTypes } from './displayStocks.reducer';
 import { Observable, of } from 'rxjs';
 import { Action } from '@ngrx/store';
 import { catchError, map, mergeMap } from 'rxjs/operators';
+import { DisplayStocksService } from '../services/displayStocks.service';
+import { DisplayStocksActionTypes, DisplayStocksAction } from '../reducers/displayStocks.reducer';
 
 @Injectable()
 export class DisplayStocksEffects {

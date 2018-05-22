@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { DisplayStocksActionTypes } from './displayStocks.reducer';
 import * as c3 from 'c3';
+import { DisplayStocksActionTypes } from '../reducers/displayStocks.reducer';
 
 @Component({
   selector: 'app-root',
